@@ -1,0 +1,81 @@
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+  <string name="app_name">AR Language Learning</string>
+  <string name="scan_busy">Scanning…</string>
+  <string name="scan_available">Scan</string>
+  <string name="clear">Clear</string>
+  <string name="use_cloud_ml">Use Cloud ML</string>
+  <string name="open_camera">Open Camera</string>
+  <string name="new_password">New Password</string>
+  <string name="confirm_new_password">Confirm New Password</string>
+<!--  <string name="help_text"><![CDATA[Welcome to the Help Center of %1$s, your comprehensive guide to navigating and mastering your language learning journey with augmented reality. Whether you\'re just getting started or seeking answers to specific questions, you\'ll find a wealth of information here to assist you. Our goal is to ensure that your experience with %1$s is both enjoyable and effective.-->
+
+<!--Navigational Guide-->
+
+<!--%1$s is designed to be intuitive and user-friendly. Here\'s a quick guide to help you find your way around:-->
+
+<!--Home Screen: Your central hub for accessing all features. From here, you can dive into language lessons, access AR mode, or review your progress.-->
+<!--Lessons: This section contains a series of interactive lessons tailored to your chosen language. Each lesson builds on the previous one, reinforcing your learning.-->
+<!--Quizzes: Test your knowledge and reinforce learning through quizzes found at the end of each lesson module.-->
+<!--AR Mode: Engage with the real world by activating the AR feature. Simply point your camera at objects to see their names in your target language.-->
+<!--Profile: Manage your account settings and track your learning milestones.-->
+<!--Troubleshooting Tips-->
+
+<!--Encountering issues? Here are some quick fixes:-->
+
+<!--Login Issues: Ensure your login credentials are entered correctly. If you\'ve forgotten your password, use the 'Forgot Password' feature to reset it.-->
+<!--App Crashes: If %1$s unexpectedly quits, start by closing and reopening the app. Make sure you have the latest version installed.-->
+<!--AR Camera Issues: For AR difficulties, check that your camera is functioning correctly and that you have granted the app permission to use it.-->
+<!--Should problems persist after these steps, please consult our detailed troubleshooting guide or contact our support team for assistance.-->
+
+<!--Feature Usage-->
+
+<!--Maximize your learning with these features:-->
+
+<!--Using AR for Learning: In AR mode, align the camera with any object to see its name in the language you're learning. It's a fun and interactive way to expand your vocabulary!-->
+<!--Completing Exercises: Each lesson includes exercises designed to reinforce your understanding. Use hints if you're stuck, and repeat exercises as needed to ensure mastery.-->
+<!--Study Aids: Access various study aids such as flashcards and summary notes to bolster your learning outside of structured lessons.-->
+<!--Remember, practice makes perfect, so utilize these features regularly to enhance your language skills. For more detailed guidance on each feature, visit the relevant sections within this Help Center.]]></string>-->
+
+  <string name="login">Login</string>
+  <string name="username">Username</string>
+  <string name="password">Password</string>
+  <string name="create_account_text">Don\'t have an account? Sign Up</string>
+  <string name="login_text">login</string>
+    <string name="menu">Menu</string>
+  <string name="graphic_for_ar_camera">Graphic for AR camera</string>
+  <string name="open_ar_camera">Open AR Camera</string>
+  <string name="start_learning_new_vocabulary">Start learning new vocabulary</string>
+  <string name="study_graphic">Study graphic</string>
+  <string name="study">Study</string>
+  <string name="test_graphic">Test graphic</string>
+  <string name="test">Test</string>
+    <string name="current_password">Current Password</string>
+    <string name="change_password">Change password</string>
+  <string name="logout">Logout</string>
+  <string name="profile">Profile</string>
+    <string name="test_your_knowledge">Test your knowledge</string>
+  <string name="learn_interactively_with_augmented_reality">Learn interactively with Augmented Reality</string>
+    <string name="ic_baseline_account_circle_24" />
+  <string name="help_page_content">Navigational Guide\n\nThe app is designed to be intuitive and user-friendly. Here\'s a quick guide to help you find your way around:\n\nHome Screen: Your central hub for accessing all features. From here, you can dive into language lessons, access AR mode, or review your progress.\n\nLessons: This section contains a series of interactive lessons tailored to your chosen language. Each lesson builds on the previous one, reinforcing your learning.\n\nQuizzes: Test your knowledge and reinforce learning through quizzes found at the end of each lesson module.\n\nAR Mode: Engage with the real world by activating the AR feature. Simply point your camera at objects to see their names in your target language.\n\nProfile: Manage your account settings and track your learning milestones.\n\nTroubleshooting Tips\n\nEncountering issues? Here are some quick fixes:\n\nLogin Issues: Ensure your login credentials are entered correctly. If you\'ve forgotten your password, use the \'Forgot Password\' feature to reset it.\n\nApp Crashes: If the app unexpectedly quits, start by closing and reopening the app. Make sure you have the latest version installed.\n\nAR Camera Issues: For AR difficulties, check that your camera is functioning correctly and that you have granted the app permission to use it.\n\nShould problems persist after these steps, please consult our detailed troubleshooting guide or contact our support team for assistance.\n\nFeature Usage\n\nMaximize your learning with these features:\n\nUsing AR for Learning: In AR mode, align the camera with any object to see its name in the language you\'re learning. It\'s a fun and interactive way to expand your vocabulary!\n\nCompleting Exercises: Each lesson includes exercises designed to reinforce your understanding. Use hints if you\'re stuck, and repeat exercises as needed to ensure mastery.\n\nStudy Aids: Access various study aids such as flashcards and summary notes to bolster your learning outside of structured lessons.\n\nRemember, practice makes perfect, so utilize these features regularly to enhance your language skills. For more detailed guidance on each feature, visit the relevant sections within this Help Center.</string>
+  <string name="help">Help</string>
+  <string name="view_help_icon">view help icon</string>
+  <string name="settings_icon">settings icon</string>
+
+
+</resources>
