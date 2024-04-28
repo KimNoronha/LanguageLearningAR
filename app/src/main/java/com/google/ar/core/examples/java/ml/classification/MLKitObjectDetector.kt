@@ -35,17 +35,17 @@ import kotlin.math.min
  */
 class MLKitObjectDetector(context: Activity) : ObjectDetector(context) {
     // To use a custom model, follow steps on https://developers.google.com/ml-kit/vision/object-detection/custom-models/android.
+
     val model = LocalModel.Builder().setAssetFilePath("12.tflite").build()
     val builder = CustomObjectDetectorOptions.Builder(model)
-
-    // For the ML Kit default model, use the following:
-//  val builder = ObjectDetectorOptions.Builder()
 
     private val options = builder
         .setDetectorMode(CustomObjectDetectorOptions.SINGLE_IMAGE_MODE)
         .enableClassification()
         .enableMultipleObjects()
         .build()
+
+
     private val detector = ObjectDetection.getClient(options)
 
     object DetectedObjectsRepository {

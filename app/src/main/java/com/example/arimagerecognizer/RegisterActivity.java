@@ -20,6 +20,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,6 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText usernameEditText = findViewById(R.id.editTextNewUsername);
         final EditText passwordEditText = findViewById(R.id.editTextNewPassword);
         final EditText confirmPasswordEditText = findViewById(R.id.editTextConfirmPassword);
-        final Spinner languageSpinner = findViewById(R.id.spinnerLanguage);
         Button registerButton = findViewById(R.id.button_register_enter);
 
         // Set click listener for the register button
@@ -39,29 +39,17 @@ public class RegisterActivity extends AppCompatActivity {
                 String username = usernameEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
                 String confirmPassword = confirmPasswordEditText.getText().toString();
-                String language = languageSpinner.getSelectedItem().toString();
 
-                // Validate the input fields
-//                if (!password.equals(confirmPassword)) {
-//                    // Show error if passwords do not match
-//                    Toast.makeText(RegisterActivity.this, "Passwords do not match!", Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
-//                if (username.isEmpty() || password.isEmpty()) {
-//                    // Show error if any field is empty
-//                    Toast.makeText(RegisterActivity.this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
 
                 if (!LoginActivity.validateUsername(username)) {
                     // Show error if any field is empty
-                    Toast.makeText(RegisterActivity.this, "Invalid Username", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Invalid Email", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (!LoginActivity.validatePassword(password)) {
                     // Show error if any field is empty
-                    Toast.makeText(RegisterActivity.this, "Invalid Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Invalid password. Must be 8+ letters and numbers only.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -73,12 +61,14 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-                // If validation passes, proceed to register the user
-                // This is a placeholder for registration logic
+
                 registerNewUser(username, password);
             }
         });
+
         mAuth = FirebaseAuth.getInstance();
+
+
     }
 
     public void registerNewUser(String username, String password) {
@@ -100,3 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
         return Objects.equals(password, confirmPassword);
     }
 }
+
+
+
+

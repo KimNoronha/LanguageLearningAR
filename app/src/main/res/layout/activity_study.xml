@@ -3,18 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+
+    android:background="@color/background_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.arimagerecognizer.StudyActivity">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/textStudyTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Learn Vocabulary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewVocabularySets"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="78dp"
+        app:layout_constraintTop_toBottomOf="@+id/textStudyTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

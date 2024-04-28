@@ -43,25 +43,12 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
-        android:hint="Username"
+        android:hint="Email"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-
-    <!--        android:background="@drawable/spinner_background"-->
-    <Spinner
-        android:id="@+id/spinnerLanguage"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:entries="@array/language_options"
-        android:padding="8dp"
-        android:popupBackground="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNewUsername"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="26dp" />
 
 
 
@@ -74,7 +61,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

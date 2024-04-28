@@ -157,7 +157,7 @@ public class LoginActivityTest {
 
         // Assert
         verify(mockAuth, never()).signInWithEmailAndPassword(anyString(), anyString());
-        assertEquals("Login attempt with empty username or password", ShadowToast.getTextOfLatestToast());
+        assertEquals("Login attempt with empty email or password", ShadowToast.getTextOfLatestToast());
     }
 
     @Test
@@ -179,7 +179,7 @@ public class LoginActivityTest {
         verify(mockAuth).signInWithEmailAndPassword(invalidEmail, invalidPassword);
         verify(mockAuthTask).addOnFailureListener(any());
         ShadowLooper.runUiThreadTasksIncludingDelayedTasks();
-        assertEquals("Login Failed: Authentication failed", ShadowToast.getTextOfLatestToast());
+        assertEquals("Login Incorrect. Please try again.", ShadowToast.getTextOfLatestToast());
     }
 
 

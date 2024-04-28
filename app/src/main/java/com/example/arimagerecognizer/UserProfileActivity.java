@@ -25,13 +25,9 @@ public class UserProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_user_profile);
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
+
 
         TextView usernameTextView = findViewById(R.id.textViewUsername);
         Button logoutButton = findViewById(R.id.buttonLogout);
@@ -39,6 +35,7 @@ public class UserProfileActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             usernameTextView.setText(user.getEmail());
+
         } else {
             // Log out the user or show an error message
             Log.d("UserProfileActivity", "No user is currently signed in.");

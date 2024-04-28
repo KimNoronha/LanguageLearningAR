@@ -41,7 +41,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
-        android:hint="Username"
+        android:hint="Email"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/textWelcomeMessage"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,6 +87,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="32dp"
-        android:onClick="onSignUpClick"/>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

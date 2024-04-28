@@ -107,7 +107,10 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     void loadContent() {
+
         CollectionReference transactionsRef = db.collection("labels/" + FirebaseAuth.getInstance().getCurrentUser().getEmail() + "/recognisedLabels");
+
+
         transactionsRef.get().addOnSuccessListener(queryDocumentSnapshots -> {
             Log.d(TAG, "loadContent: size: " + queryDocumentSnapshots.size());
             // Iterate through the documents
@@ -137,13 +140,17 @@ public class QuizActivity extends AppCompatActivity {
         if (loadCount > 10) return;
 
         String word = pickRandomDocument(ignoranceList);
+
+
         if (word == null) {
             startQuiz(loadCount + 1);
             return;
         }
 
         String imagePath = "images/" + FirebaseAuth.getInstance().getCurrentUser().getEmail() + "/" + word + ".jpg";
+
         StorageReference storageRef = FirebaseStorage.getInstance().getReference().child(imagePath);
+
         File localFile = null;
         try {
             localFile = new File(this.getCacheDir(), "image_" + word + ".jpg");
@@ -160,6 +167,8 @@ public class QuizActivity extends AppCompatActivity {
         storageRef.getFile(localFile).addOnSuccessListener(it -> {
             // Load image using Glide from the local file
             Glide.with(this).load(finalLocalFile).into(quizImageView);
+
+
             loading.setVisibility(View.GONE);
 
         }).addOnFailureListener(e -> {

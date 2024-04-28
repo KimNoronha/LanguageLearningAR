@@ -37,14 +37,14 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordInput.getText().toString().trim();
 
             if (username.isEmpty() || password.isEmpty()) {
-                Toast.makeText(LoginActivity.this, "Username and password cannot be empty", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "Email and password cannot be empty", Toast.LENGTH_LONG).show();
                 return; // Early return to prevent further processing
             }
 
             if (!validateUsername(username)) {
-                Toast.makeText(LoginActivity.this, "Invalid Username, Check and try again", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "Invalid Email, Check and try again", Toast.LENGTH_LONG).show();
             } else if (!validatePassword(password)) {
-                Toast.makeText(LoginActivity.this, "Invalid Password, Check and try again", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "Invalid password. Must be 8+ letters and numbers only.", Toast.LENGTH_LONG).show();
             } else {
                 loginUser(username, password);
             }
@@ -55,13 +55,13 @@ public class LoginActivity extends AppCompatActivity {
 
     public void loginUser(String username, String password) {
         if (username.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Login attempt with empty username or password", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Login attempt with empty email or password", Toast.LENGTH_LONG).show();
             return; // Prevent login with empty credentials
         }
 
         mAuth.signInWithEmailAndPassword(username, password)
                 .addOnSuccessListener(success -> startActivity(new Intent(this, HomeActivity.class)))
-                .addOnFailureListener(failure -> Toast.makeText(LoginActivity.this, "Login Failed: " + failure.getMessage(), Toast.LENGTH_LONG).show());
+                .addOnFailureListener(failure -> Toast.makeText(LoginActivity.this, "Login Incorrect. Please try again.", Toast.LENGTH_LONG).show());
     }
 
     public static boolean validateUsername(String username) {

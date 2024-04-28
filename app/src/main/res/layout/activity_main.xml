@@ -48,13 +48,13 @@
 
   </LinearLayout>
 
-  <androidx.appcompat.widget.SwitchCompat
-      android:id="@+id/useCloudMlSwitch"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="top|end"
-      android:padding="16dp"
-      android:background="#55FFFFFF"
-      android:text="@string/use_cloud_ml" />
+<!--  <androidx.appcompat.widget.SwitchCompat-->
+<!--      android:id="@+id/useCloudMlSwitch"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_gravity="top|end"-->
+<!--      android:padding="16dp"-->
+<!--      android:background="#55FFFFFF"-->
+<!--      android:text="@string/use_cloud_ml" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

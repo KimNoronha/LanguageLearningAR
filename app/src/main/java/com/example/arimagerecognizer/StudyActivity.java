@@ -39,6 +39,8 @@ public class StudyActivity extends AppCompatActivity {
 
     private void loadDataFromFirestore() {
         Log.d(TAG, "loadDataFromFirestore: Flag 1");
+
+
         String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
